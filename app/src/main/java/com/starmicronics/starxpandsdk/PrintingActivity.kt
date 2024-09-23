@@ -17,6 +17,7 @@ import com.starmicronics.stario10.starxpandcommand.DocumentBuilder
 import com.starmicronics.stario10.starxpandcommand.MagnificationParameter
 import com.starmicronics.stario10.starxpandcommand.PrinterBuilder
 import com.starmicronics.stario10.starxpandcommand.DrawerBuilder
+import com.starmicronics.stario10.starxpandcommand.PageModeBuilder
 import com.starmicronics.stario10.starxpandcommand.StarXpandCommandBuilder
 import com.starmicronics.stario10.starxpandcommand.printer.*
 import com.starmicronics.stario10.starxpandcommand.drawer.*
@@ -87,8 +88,15 @@ class PrintingActivity : AppCompatActivity() {
 //                          DrawerBuilder()
 //                              .actionOpen(OpenParameter())
 //                      )
+
                         .addPrinter(
                             PrinterBuilder()
+                                .addPageMode(
+                                    PageModeAreaParameter(48.0, 30.0),
+                                    PageModeBuilder().actionPrintImage(
+                                        PageModeImageParameter(logo, 20.0, 0.0, 406)
+                                    )
+                                )
                                 .actionPrintImage(ImageParameter(logo, 406))
                                 .styleInternationalCharacter(InternationalCharacterType.Usa)
                                 .styleCharacterSpace(0.0)

@@ -1,0 +1,109 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.starmicronics.starxpandsdk"
+4    android:versionCode="1"
+5    android:versionName="1.7.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->[com.starmicronics:stario10:1.7.0] E:\Android-Studio\.gradle\caches\transforms-3\d2ad11e409cd0ca1440b41c33e7d7bf8\transformed\jetified-stario10-1.7.0\AndroidManifest.xml:7:5-68
+11-->[com.starmicronics:stario10:1.7.0] E:\Android-Studio\.gradle\caches\transforms-3\d2ad11e409cd0ca1440b41c33e7d7bf8\transformed\jetified-stario10-1.7.0\AndroidManifest.xml:7:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+12-->[com.starmicronics:stario10:1.7.0] E:\Android-Studio\.gradle\caches\transforms-3\d2ad11e409cd0ca1440b41c33e7d7bf8\transformed\jetified-stario10-1.7.0\AndroidManifest.xml:8:5-76
+12-->[com.starmicronics:stario10:1.7.0] E:\Android-Studio\.gradle\caches\transforms-3\d2ad11e409cd0ca1440b41c33e7d7bf8\transformed\jetified-stario10-1.7.0\AndroidManifest.xml:8:22-73
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->[com.starmicronics:stario10:1.7.0] E:\Android-Studio\.gradle\caches\transforms-3\d2ad11e409cd0ca1440b41c33e7d7bf8\transformed\jetified-stario10-1.7.0\AndroidManifest.xml:9:5-67
+13-->[com.starmicronics:stario10:1.7.0] E:\Android-Studio\.gradle\caches\transforms-3\d2ad11e409cd0ca1440b41c33e7d7bf8\transformed\jetified-stario10-1.7.0\AndroidManifest.xml:9:22-64
+14
+15    <permission
+15-->[androidx.core:core:1.9.0] E:\Android-Studio\.gradle\caches\transforms-3\8f497674a255effd5fae2ce32a69d3fd\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+16        android:name="com.starmicronics.starxpandsdk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.9.0] E:\Android-Studio\.gradle\caches\transforms-3\8f497674a255effd5fae2ce32a69d3fd\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.9.0] E:\Android-Studio\.gradle\caches\transforms-3\8f497674a255effd5fae2ce32a69d3fd\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.starmicronics.starxpandsdk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.9.0] E:\Android-Studio\.gradle\caches\transforms-3\8f497674a255effd5fae2ce32a69d3fd\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] E:\Android-Studio\.gradle\caches\transforms-3\8f497674a255effd5fae2ce32a69d3fd\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:4:5-26:19
+22        android:allowBackup="true"
+22-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:5:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.9.0] E:\Android-Studio\.gradle\caches\transforms-3\8f497674a255effd5fae2ce32a69d3fd\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:6:9-43
+27        android:label="@string/app_name"
+27-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:7:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:8:9-54
+29        android:supportsRtl="true"
+29-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:9:9-35
+30        android:theme="@style/Theme.StarXpandSDK" >
+30-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:10:9-50
+31        <activity
+31-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:11:9-19:20
+32            android:name="com.starmicronics.starxpandsdk.MainActivity"
+32-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:12:13-41
+33            android:exported="true" >
+33-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:13:13-36
+34            <intent-filter>
+34-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:14:13-18:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:15:17-69
+35-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:15:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:17:17-77
+37-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:17:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity android:name="com.starmicronics.starxpandsdk.DiscoveryActivity" />
+40-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:20:9-55
+40-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:20:19-52
+41        <activity android:name="com.starmicronics.starxpandsdk.PrintingActivity" />
+41-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:21:9-54
+41-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:21:19-51
+42        <activity android:name="com.starmicronics.starxpandsdk.MonitorActivity" />
+42-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:22:9-53
+42-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:22:19-50
+43        <activity android:name="com.starmicronics.starxpandsdk.StatusActivity" />
+43-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:23:9-52
+43-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:23:19-49
+44        <activity android:name="com.starmicronics.starxpandsdk.SpoolerActivity" />
+44-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:24:9-53
+44-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:24:19-50
+45        <activity android:name="com.starmicronics.starxpandsdk.TemplatePrintActivity" />
+45-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:25:9-59
+45-->E:\Development\Library\StarXpand-SDK-Android\app\src\main\AndroidManifest.xml:25:19-56
+46
+47        <provider
+47-->[androidx.emoji2:emoji2:1.2.0] E:\Android-Studio\.gradle\caches\transforms-3\665bb37236a20c8dc8d1cbfdd60367b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+48            android:name="androidx.startup.InitializationProvider"
+48-->[androidx.emoji2:emoji2:1.2.0] E:\Android-Studio\.gradle\caches\transforms-3\665bb37236a20c8dc8d1cbfdd60367b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+49            android:authorities="com.starmicronics.starxpandsdk.androidx-startup"
+49-->[androidx.emoji2:emoji2:1.2.0] E:\Android-Studio\.gradle\caches\transforms-3\665bb37236a20c8dc8d1cbfdd60367b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+50            android:exported="false" >
+50-->[androidx.emoji2:emoji2:1.2.0] E:\Android-Studio\.gradle\caches\transforms-3\665bb37236a20c8dc8d1cbfdd60367b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+51            <meta-data
+51-->[androidx.emoji2:emoji2:1.2.0] E:\Android-Studio\.gradle\caches\transforms-3\665bb37236a20c8dc8d1cbfdd60367b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+52-->[androidx.emoji2:emoji2:1.2.0] E:\Android-Studio\.gradle\caches\transforms-3\665bb37236a20c8dc8d1cbfdd60367b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+53                android:value="androidx.startup" />
+53-->[androidx.emoji2:emoji2:1.2.0] E:\Android-Studio\.gradle\caches\transforms-3\665bb37236a20c8dc8d1cbfdd60367b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.4.1] E:\Android-Studio\.gradle\caches\transforms-3\6d24200456e4bea2e741f38f108d74b6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] E:\Android-Studio\.gradle\caches\transforms-3\6d24200456e4bea2e741f38f108d74b6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] E:\Android-Studio\.gradle\caches\transforms-3\6d24200456e4bea2e741f38f108d74b6\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+57        </provider>
+58    </application>
+59
+60</manifest>

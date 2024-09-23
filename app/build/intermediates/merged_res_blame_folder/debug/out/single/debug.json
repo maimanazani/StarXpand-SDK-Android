@@ -1,0 +1,158 @@
+[
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample33_visitor_label_user_profile_picture.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample33_visitor_label_user_profile_picture.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_front.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-xxhdpi/ic_launcher_front.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample19_pharmacy_medication1_logo.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample19_pharmacy_medication1_logo.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/raw_receipt3_field_data.json.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/raw/receipt3_field_data.json"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-mdpi_ic_launcher_back.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-mdpi/ic_launcher_back.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample17_japanese_food_label_cake_plastic.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample17_japanese_food_label_cake_plastic.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-mdpi_ic_launcher_front.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-mdpi/ic_launcher_front.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/raw_receipt1_field_data.json.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/raw/receipt1_field_data.json"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample21_shipping_label_phones_old.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample21_shipping_label_phones_old.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-hdpi_ic_launcher_back.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-hdpi/ic_launcher_back.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/layout_activity_template_print.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/layout/activity_template_print.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample21_shipping_label_house.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample21_shipping_label_house.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_signature.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/signature.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample32_sale_50off_background.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample32_sale_50off_background.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-xhdpi_ic_launcher_front.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-xhdpi/ic_launcher_front.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap_ic_launcher.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap/ic_launcher.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-xxhdpi_ic_launcher_back.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-xxhdpi/ic_launcher_back.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-hdpi_ic_launcher_front.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-hdpi/ic_launcher_front.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/layout_activity_printing.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/layout/activity_printing.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/raw_receipt2_field_data.json.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/raw/receipt2_field_data.json"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-xhdpi_ic_launcher_back.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-xhdpi/ic_launcher_back.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/layout_activity_monitor.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/layout/activity_monitor.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/layout_activity_status.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/layout/activity_status.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_logo_01.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/logo_01.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/raw_label2_field_data.json.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/raw/label2_field_data.json"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher_back.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-xxxhdpi/ic_launcher_back.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/raw_label1_field_data.json.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/raw/label1_field_data.json"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/mipmap-xxxhdpi_ic_launcher_front.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/mipmap-xxxhdpi/ic_launcher_front.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample16_japanese_food_label_lunch_box_plastic.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample16_japanese_food_label_lunch_box_plastic.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample28_cleanedsanitised_hand.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample28_cleanedsanitised_hand.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/layout_activity_spooler.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/layout/activity_spooler.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_label_sample01_tamper_proof_label_checked.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/label_sample01_tamper_proof_label_checked.png"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/layout_activity_discovery.xml.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/layout/activity_discovery.xml"
+    },
+    {
+        "merged": "com.starmicronics.starxpandsdk.app-merged_res-28:/drawable_receipt_sample16_cafe_template_coffee_cup.png.flat",
+        "source": "com.starmicronics.starxpandsdk.app-main-30:/drawable/receipt_sample16_cafe_template_coffee_cup.png"
+    }
+]

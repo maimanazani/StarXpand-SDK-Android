@@ -20,19 +20,29 @@ import com.starmicronics.stario10.starxpandcommand.DrawerBuilder
 import com.starmicronics.stario10.starxpandcommand.StarXpandCommandBuilder
 import com.starmicronics.stario10.starxpandcommand.printer.*
 import com.starmicronics.stario10.starxpandcommand.drawer.*
-import android.graphics.Typeface
+
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
+
+import android.content.Context
 import android.graphics.Bitmap
-import android.graphics.Paint
-import android.text.StaticLayout
-import android.text.TextPaint
-import android.text.Layout
-import android.graphics.Rect
+
 import android.graphics.Canvas
 import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.Rect
+import android.graphics.Typeface
+import android.text.Layout
+import android.text.StaticLayout
+import android.text.TextPaint
+
+import com.starmicronics.stario10.starxpandcommand.printer.Alignment
+import com.starmicronics.stario10.starxpandcommand.printer.CutType
+import com.starmicronics.stario10.starxpandcommand.printer.ImageParameter
+import com.starmicronics.stario10.starxpandcommand.printer.InternationalCharacterType
+import com.starmicronics.starxpandsdk.R
 
 class PrintingActivity : AppCompatActivity() {
 
@@ -109,7 +119,7 @@ class PrintingActivity : AppCompatActivity() {
                                                 "City, State 12345\n" +
                                                 "\n" +
                                                 "Date:MM/DD/YYYY Time:HH:MM PM\n" +
-                                                "-----------------------------\n" +
+                                                "------------------------------------------------\n" +
                                                 "\n" +
                                                 "SKU       Description   Total\n" +
                                                 "300678566 PLAIN T-SHIRT 10.99\n" +
@@ -129,8 +139,7 @@ class PrintingActivity : AppCompatActivity() {
                                                 "156.95\n" +
                                                 "Visa XXXX-XXXX-XXXX-0123\n" +
                                                 "\n"
-                                    )
-                                )
+                                    ))
                                 .actionCut(CutType.Full)
                         )
                 )
@@ -147,6 +156,14 @@ class PrintingActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun createImageParameterFromText(text: String):ImageParameter{
+        val width = 384
+        val typeface = Typeface.create(Typeface.MONOSPACE, Typeface.NORMAL)
+        val bitmap = createBitmapFromText(text,22,width,typeface);
+        return ImageParameter(bitmap,width)
+    }
+
     private fun createBitmapFromText(
         text: String,textSize: Int,width: Int,typeface: Typeface?): Bitmap {
         val paint = Paint()
@@ -175,14 +192,7 @@ class PrintingActivity : AppCompatActivity() {
         canvas.translate(0f, 0f)
         staticLayout.draw(canvas)
         return bitmap
-    }
 
-
-    private fun createImageParameterFromText(text: String):ImageParameter{
-        val width = 432
-        val typeface = Typeface.create(Typeface.MONOSPACE, Typeface.NORMAL)
-        val bitmap = createBitmapFromText(text,22,width,typeface);
-        return ImageParameter(bitmap,width)
     }
 
     private fun requestBluetoothPermission() {

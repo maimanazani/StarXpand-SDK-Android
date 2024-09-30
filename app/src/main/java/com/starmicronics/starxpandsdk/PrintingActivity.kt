@@ -188,7 +188,7 @@ class PrintingActivity : AppCompatActivity() {
 
         // Create bitmap
         bitmap = Bitmap.createBitmap(
-            576,
+            staticLayout.width,
             staticLayout.height,
             Bitmap.Config.ARGB_8888
         )

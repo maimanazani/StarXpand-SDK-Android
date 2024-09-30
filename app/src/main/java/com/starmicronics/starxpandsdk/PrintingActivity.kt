@@ -17,15 +17,22 @@ import com.starmicronics.stario10.starxpandcommand.DocumentBuilder
 import com.starmicronics.stario10.starxpandcommand.MagnificationParameter
 import com.starmicronics.stario10.starxpandcommand.PrinterBuilder
 import com.starmicronics.stario10.starxpandcommand.DrawerBuilder
-import com.starmicronics.stario10.starxpandcommand.PageModeBuilder
 import com.starmicronics.stario10.starxpandcommand.StarXpandCommandBuilder
 import com.starmicronics.stario10.starxpandcommand.printer.*
 import com.starmicronics.stario10.starxpandcommand.drawer.*
-
+import android.graphics.Typeface
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
+import android.graphics.Bitmap
+import android.graphics.Paint
+import android.text.StaticLayout
+import android.text.TextPaint
+import android.text.Layout
+import android.graphics.Rect
+import android.graphics.Canvas
+import android.graphics.Color
 
 class PrintingActivity : AppCompatActivity() {
 
@@ -88,28 +95,43 @@ class PrintingActivity : AppCompatActivity() {
 //                          DrawerBuilder()
 //                              .actionOpen(OpenParameter())
 //                      )
-
                         .addPrinter(
                             PrinterBuilder()
-                                .addPageMode(
-                                    PageModeAreaParameter(48.0, 30.0),
-                                    PageModeBuilder().actionPrintImage(
-                                        PageModeImageParameter(logo, 20.0, 0.0, 406)
-                                    )
-                                )
                                 .actionPrintImage(ImageParameter(logo, 406))
                                 .styleInternationalCharacter(InternationalCharacterType.Usa)
                                 .styleCharacterSpace(0.0)
                                 .styleAlignment(Alignment.Center)
-                                .actionPrintText(
-                                    "Star Clothing Boutique\n" +
-                                            "123 Star Road\n" +
-                                            "City, State 12345\n" +
-                                            "\n"
+
+                                .actionPrintImage(
+                                    createImageParameterFromText(
+                                        "Star Clothing Boutique\n" +
+                                                "123 Star Road\n" +
+                                                "City, State 12345\n" +
+                                                "\n" +
+                                                "Date:MM/DD/YYYY Time:HH:MM PM\n" +
+                                                "-----------------------------\n" +
+                                                "\n" +
+                                                "SKU       Description   Total\n" +
+                                                "300678566 PLAIN T-SHIRT 10.99\n" +
+                                                "300692003 BLACK DENIM   29.99\n" +
+                                                "300651148 BLUE DENIM    29.99\n" +
+                                                "300642980 STRIPED DRESS 49.99\n" +
+                                                "300638471 BLACK BOOTS   35.99\n" +
+                                                "\n" +
+                                                "Subtotal               156.95\n" +
+                                                "Tax                      0.00\n" +
+                                                "-----------------------------\n" +
+                                                "\n" +
+                                                "Total                 $156.95\n" +
+                                                "-----------------------------\n" +
+                                                "\n" +
+                                                "Charge\n" +
+                                                "156.95\n" +
+                                                "Visa XXXX-XXXX-XXXX-0123\n" +
+                                                "\n"
+                                    )
                                 )
-                                .styleAlignment(Alignment.Left)
-                                .actionPrintText("        ")
-                                .actionCut(CutType.TearOff)
+                                .actionCut(CutType.Full)
                         )
                 )
                 val commands = builder.getCommands()
@@ -124,6 +146,43 @@ class PrintingActivity : AppCompatActivity() {
                 printer.closeAsync().await()
             }
         }
+    }
+    private fun createBitmapFromText(
+        text: String,textSize: Int,width: Int,typeface: Typeface?): Bitmap {
+        val paint = Paint()
+        val bitmap: Bitmap
+        paint.textSize = textSize.toFloat()
+        paint.typeface = typeface
+        paint.getTextBounds(text, 0, text.length, Rect())
+        val textPaint = TextPaint(paint)
+        val builder = StaticLayout.Builder.obtain(text,0,text.length,textPaint,width)
+            .setAlignment(Layout.Alignment.ALIGN_NORMAL)
+            .setLineSpacing(0f,1f)
+            .setIncludePad(false)
+
+        val staticLayout = builder.build()
+
+        // Create bitmap
+        bitmap = Bitmap.createBitmap(
+            staticLayout.width,
+            staticLayout.height,
+            Bitmap.Config.ARGB_8888
+        )
+
+        // Create canvas
+        val canvas: Canvas = Canvas(bitmap)
+        canvas.drawColor(Color.WHITE)
+        canvas.translate(0f, 0f)
+        staticLayout.draw(canvas)
+        return bitmap
+    }
+
+
+    private fun createImageParameterFromText(text: String):ImageParameter{
+        val width = 634
+        val typeface = Typeface.create(Typeface.MONOSPACE, Typeface.NORMAL)
+        val bitmap = createBitmapFromText(text,22,width,typeface);
+        return ImageParameter(bitmap,width)
     }
 
     private fun requestBluetoothPermission() {

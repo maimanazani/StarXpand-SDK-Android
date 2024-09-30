@@ -98,17 +98,22 @@ class PrintingActivity : AppCompatActivity() {
                 // For other available methods, please also refer to "Supported Model" of each method.
                 // https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/android-kotlin-api-reference/stario10-star-xpand-command/printer-builder/action-print-image.html
                 val builder = StarXpandCommandBuilder()
-                builder.addDocument(
+                builder
+
+                    .addDocument(
                     DocumentBuilder()
+
                         // To open a cash drawer, comment out the following code.
 //                      .addDrawer(
 //                          DrawerBuilder()
 //                              .actionOpen(OpenParameter())
 //                      )
-                        .settingPrintableArea(72.0)
+
                         .addPrinter(
+
                             PrinterBuilder()
-                                .actionPrintImage(ImageParameter(logo, 406))
+
+
                                 .styleInternationalCharacter(InternationalCharacterType.Usa)
                                 .styleCharacterSpace(0.0)
                                 .styleAlignment(Alignment.Center)
@@ -183,7 +188,7 @@ class PrintingActivity : AppCompatActivity() {
 
         // Create bitmap
         bitmap = Bitmap.createBitmap(
-            staticLayout.width,
+            576,
             staticLayout.height,
             Bitmap.Config.ARGB_8888
         )

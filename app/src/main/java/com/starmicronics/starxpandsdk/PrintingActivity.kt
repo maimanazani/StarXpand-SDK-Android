@@ -105,12 +105,14 @@ class PrintingActivity : AppCompatActivity() {
 //                          DrawerBuilder()
 //                              .actionOpen(OpenParameter())
 //                      )
+                        .settingPrintableArea(72.0)
                         .addPrinter(
                             PrinterBuilder()
                                 .actionPrintImage(ImageParameter(logo, 406))
                                 .styleInternationalCharacter(InternationalCharacterType.Usa)
                                 .styleCharacterSpace(0.0)
                                 .styleAlignment(Alignment.Center)
+
 
                                 .actionPrintImage(
                                     createImageParameterFromText(
@@ -173,7 +175,7 @@ class PrintingActivity : AppCompatActivity() {
         paint.getTextBounds(text, 0, text.length, Rect())
         val textPaint = TextPaint(paint)
         val builder = StaticLayout.Builder.obtain(text,0,text.length,textPaint,width)
-            .setAlignment(Layout.Alignment.ALIGN_NORMAL)
+            .setAlignment(Layout.Alignment.ALIGN_CENTER)
             .setLineSpacing(0f,1f)
             .setIncludePad(false)
 

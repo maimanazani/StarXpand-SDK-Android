@@ -137,7 +137,7 @@ class PrintingActivity : AppCompatActivity() {
                                                 "\n" +
                                                 "Subtotal               156.95\n" +
                                                 "Tax                      0.00\n" +
-                                                "-----------------------------\n" +
+                                                "------------------------------------------------\n" +
                                                 "\n" +
                                                 "Total                 $156.95\n" +
                                                 "-----------------------------\n" +
@@ -165,7 +165,7 @@ class PrintingActivity : AppCompatActivity() {
     }
 
     private fun createImageParameterFromText(text: String):ImageParameter{
-        val width = 384
+        val width = 576
         val typeface = Typeface.create(Typeface.MONOSPACE, Typeface.NORMAL)
         val bitmap = createBitmapFromText(text,22,width,typeface);
         return ImageParameter(bitmap,width)

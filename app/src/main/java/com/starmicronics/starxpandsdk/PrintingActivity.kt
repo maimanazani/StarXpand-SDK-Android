@@ -179,7 +179,7 @@ class PrintingActivity : AppCompatActivity() {
 
 
     private fun createImageParameterFromText(text: String):ImageParameter{
-        val width = 634
+        val width = 384
         val typeface = Typeface.create(Typeface.MONOSPACE, Typeface.NORMAL)
         val bitmap = createBitmapFromText(text,22,width,typeface);
         return ImageParameter(bitmap,width)
